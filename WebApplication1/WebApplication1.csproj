@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F0742522-9CAE-4604-9220-0E8B46358470}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44307</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="all\App_Start\BundleConfig.cs" />
+    <Compile Include="all\App_Start\FilterConfig.cs" />
+    <Compile Include="all\App_Start\RouteConfig.cs" />
+    <Compile Include="all\App_Start\WebApiConfig.cs" />
+    <Compile Include="all\Areas\HelpPage\ApiDescriptionExtensions.cs" />
+    <Compile Include="all\Areas\HelpPage\App_Start\HelpPageConfig.cs" />
+    <Compile Include="all\Areas\HelpPage\Controllers\HelpController.cs" />
+    <Compile Include="all\Areas\HelpPage\HelpPageAreaRegistration.cs" />
+    <Compile Include="all\Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
+    <Compile Include="all\Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
+    <Compile Include="all\Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
+    <Compile Include="all\Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
+    <Compile Include="all\Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
+    <Compile Include="all\Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
+    <Compile Include="all\Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
+    <Compile Include="all\Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
+    <Compile Include="all\Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
+    <Compile Include="all\Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
+    <Compile Include="all\Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
+    <Compile Include="all\Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
+    <Compile Include="all\Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
+    <Compile Include="all\Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
+    <Compile Include="all\Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
+    <Compile Include="all\Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="all\Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
+    <Compile Include="all\Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
+    <Compile Include="all\Areas\HelpPage\SampleGeneration\ImageSample.cs" />
+    <Compile Include="all\Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
+    <Compile Include="all\Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
+    <Compile Include="all\Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
+    <Compile Include="all\Areas\HelpPage\SampleGeneration\TextSample.cs" />
+    <Compile Include="all\Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="all\Controllers\HomeController.cs" />
+    <Compile Include="all\Controllers\ValuesController.cs" />
+    <Compile Include="pages\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="all\Areas\HelpPage\HelpPage.css" />
+    <Content Include="pages\about.html" />
+    <Content Include="pages\accessories.html" />
+    <Content Include="pages\BABIES.html" />
+    <Content Include="pages\BOYS.html" />
+    <Content Include="all\Content\bootstrap-theme.css" />
+    <Content Include="all\Content\bootstrap-theme.min.css" />
+    <Content Include="all\Content\bootstrap.css" />
+    <Content Include="all\Content\bootstrap.min.css" />
+    <Content Include="pages\girlsnisui.html" />
+    <Content Include="pages\script\bigPicture.js" />
+    <Content Include="style\styleSheetAbout.css" />
+    <Content Include="style\StyleSheetMachlakot.css" />
+    <Content Include="style\tosafim.css" />
+    <Content Include="tmunot\0159af60-4265-4bc7-b469-08491f5ac.jpg" />
+    <Content Include="tmunot\04 חת שתיים שלוש.mkv" />
+    <Content Include="tmunot\0fb58e7200437b38396a6a16e4200ee4.jpg" />
+    <Content Include="tmunot\70747-83b574dd1676e7f7a1058b20e655f2a5.jpg" />
+    <Content Include="tmunot\8c5b4280-1ba5-498a-b4f9-2.jpg" />
+    <Content Include="tmunot\9f869a7d-b817-4314-bb79-b72940abc236.jpg" />
+    <Content Include="tmunot\accessories\WYJ_0526_360x.jpg" />
+    <Content Include="tmunot\accessories\WYJ_4715_360x.jpg" />
+    <Content Include="tmunot\accessories\WYJ_7987_2_360x.jpg" />
+    <Content Include="tmunot\accessories\WYJ_7997_360x.jpg" />
+    <Content Include="tmunot\accessories\WYJ_8018_360x.jpg" />
+    <Content Include="tmunot\babys\1005003522951738_1-600x600.jpg" />
+    <Content Include="tmunot\babys\157.jpg" />
+    <Content Include="tmunot\babys\17_360x.png" />
+    <Content Include="tmunot\babys\2-126-600x798-1.jpg" />
+    <Content Include="tmunot\babys\2022-12-01 21_26_05-‫סט ביבי בנות עם ארט וטייץ _ קידי שיק.png" />
+    <Content Include="tmunot\babys\2022-12-01 21_26_27-‫אוברול קטיפה ציפקה _ קידי שיק.png" />
+    <Content Include="tmunot\babys\71avm6bTM9L._AC_UF1000,1000_QL80_.jpg" />
+    <Content Include="tmunot\babys\71K1-qVX53L._AC_UY1000_.jpg" />
+    <Content Include="tmunot\babys\71ljhKZ8IaL._AC_UY1000_.jpg" />
+    <Content Include="tmunot\babys\82516d5dc522466fe0edeaf4b94c7eb0.jpg" />
+    <Content Include="tmunot\babys\baby_baby-clothes_32_baby-boy-casual-clothes-for-jumpsuit-with-vest-and-pant_1.jpg" />
+    <Content Include="tmunot\babys\IMG_2032-450x640.jpeg" />
+    <Content Include="tmunot\babys\WYJ_1839_800x.jpg" />
+    <Content Include="tmunot\babys\WYJ_4434_540x.jpg" />
+    <Content Include="tmunot\babys\WYJ_6253_54.jpg" />
+    <Content Include="tmunot\babys\WYJ_8284_800x.jpg" />
+    <Content Include="tmunot\babys\XL-32200221-A-1662283036564.JPG" />
+    <Content Include="tmunot\babys\אוברול.jpg" />
+    <Content Include="tmunot\biz_121364935.png" />
+    <Content Include="tmunot\boykids1.jpg" />
+    <Content Include="tmunot\boys\150113108F-3_5_360x.png" />
+    <Content Include="tmunot\boys\1799491_013_1.jpg" />
+    <Content Include="tmunot\boys\2022-12-01 20_42_09-‫מכנס בנגלים 5 כיסים _ קידי שיק.png" />
+    <Content Include="tmunot\boys\2022-12-01 21_09_47-‫מכנסיים ספנדקס סקיני _ קידי שיק.png" />
+    <Content Include="tmunot\boys\2022-12-01 21_12_39-‫מכנס משובץ _ קידי שיק.png" />
+    <Content Include="tmunot\boys\2022-12-01 21_12_58-‫סוודר בייסיק בנים פסים אורז _ קידי שיק.png" />
+    <Content Include="tmunot\boys\2022-12-01 21_13_16-‫סוודר סריגת מעבר _ קידי שיק.png" />
+    <Content Include="tmunot\boys\2022-12-01 21_13_33-‫ווסט צמר משובץ _ קידי שיק.png" />
+    <Content Include="tmunot\boys\2022-12-01 21_13_55-‫מעיל בנים _ קידי שיק.png" />
+    <Content Include="tmunot\boys\2022-12-01 21_14_13-‫חולצת ג%27קארד ש.א _ קידי שיק.png" />
+    <Content Include="tmunot\boys\2022-12-01 21_14_28-‫סוודר שבתי פטצ`ים _ קידי שיק.png" />
+    <Content Include="tmunot\boys\2022-12-01 21_14_43-‫מכנס ארוך משובץ _ קידי שיק.png" />
+    <Content Include="tmunot\boys\2022-12-01 21_14_59-‫ווסט שילוב _ קידי שיק.png" />
+    <Content Include="tmunot\boys\2022-12-01 21_15_15-‫מכנס ארוך קלאסי מדוגם _ קידי שיק.png" />
+    <Content Include="tmunot\boys\2022-12-01 21_15_31-‫ווסט אלגנטי _ קידי שיק.png" />
+    <Content Include="tmunot\boys\2022-12-01 21_15_47-‫ווסט פשתן אלגנט _ קידי שיק.png" />
+    <Content Include="tmunot\boys\2022-12-01 21_16_07-‫בלייזר פשתן _ קידי שיק.png" />
+    <Content Include="tmunot\boys\2306123-3_optimized-scaled.jpg" />
+    <Content Include="tmunot\boys\71hJnLyLVsL._AC_UF894,1000_QL80_.jpg" />
+    <Content Include="tmunot\boys\WYJ_3005_360x.jpg" />
+    <Content Include="tmunot\boys\WYJ_7713_2c0db482-87ba-42c8-b904-89a3f1e98f1a_360x.jpg" />
+    <Content Include="tmunot\C_S_4964-1.jpg" />
+    <Content Include="tmunot\C__S5417-1-1.jpg" />
+    <Content Include="tmunot\D38A9784 copy.jpg" />
+    <Content Include="tmunot\ggFS.mkv" />
+    <Content Include="tmunot\girls\02-2022-10-31T131334.466-scaled.jpg" />
+    <Content Include="tmunot\girls\111.jpg" />
+    <Content Include="tmunot\girls\1619576747e6f70715f5959e19f92daf2749787125.jpg" />
+    <Content Include="tmunot\girls\4351708095_a.jpg" />
+    <Content Include="tmunot\girls\fmkred1632312569475.jpg" />
+    <Content Include="tmunot\icons\chat.png" />
+    <Content Include="tmunot\icons\comments %281%29.png" />
+    <Content Include="tmunot\icons\comments %282%29.png" />
+    <Content Include="tmunot\icons\comments.png" />
+    <Content Include="tmunot\icons\favicon.ico" />
+    <Content Include="tmunot\icons\icons8-assistive-technology-30.png" />
+    <Content Include="tmunot\icons\icons8-cart-24.png" />
+    <Content Include="tmunot\icons\icons8-cart-32.png" />
+    <Content Include="tmunot\icons\icons8-communication-48.png" />
+    <Content Include="tmunot\icons\icons8-facebook-16.png" />
+    <Content Include="tmunot\icons\icons8-facebook-24.png" />
+    <Content Include="tmunot\icons\icons8-facebook-48.png" />
+    <Content Include="tmunot\icons\icons8-facebook-50.png" />
+    <Content Include="tmunot\icons\icons8-instagram-16.png" />
+    <Content Include="tmunot\icons\icons8-instagram-24 %281%29.png" />
+    <Content Include="tmunot\icons\icons8-instagram-24 %282%29.png" />
+    <Content Include="tmunot\icons\icons8-instagram-24.png" />
+    <Content Include="tmunot\icons\icons8-instagram-48.png" />
+    <Content Include="tmunot\icons\icons8-shekel-16.png" />
+    <Content Include="tmunot\icons\icons8-shekel-24.png" />
+    <Content Include="tmunot\icons\icons8-twitter-16.png" />
+    <Content Include="tmunot\icons\icons8-twitter-circled-30.png" />
+    <Content Include="tmunot\icons\icons8-twitter-circled-48.png" />
+    <Content Include="tmunot\icons\icons8-user-16.png" />
+    <Content Include="tmunot\icons\icons8-user-24 %281%29.png" />
+    <Content Include="tmunot\icons\icons8-user-24.png" />
+    <Content Include="tmunot\icons\iconTitle.png" />
+    <Content Include="tmunot\icons\shopping-cart.png" />
+    <Content Include="tmunot\ofanoa.jpg" />
+    <Content Include="pages\favicon.ico" />
+    <Content Include="all\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="pages\GIRLS.html" />
+    <Content Include="pages\Global.asax" />
+    <Content Include="pages\HomePage.html" />
+    <Content Include="all\Scripts\bootstrap.js" />
+    <Content Include="all\Scripts\bootstrap.min.js" />
+    <Content Include="all\Areas\HelpPage\Views\Web.config" />
+    <Content Include="all\Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="all\Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <Content Include="all\Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="all\Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="all\Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <Content Include="all\Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="all\Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="all\Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <Content Include="all\Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <Content Include="all\Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="all\Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="all\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="all\Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <Content Include="all\Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <Content Include="all\Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <Content Include="all\Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <Content Include="all\Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="all\Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="style\StyleSheetHomePage.css" />
+    <Content Include="tmunot\03-01.jpg" />
+    <Content Include="tmunot\BALLOON.JPG" />
+    <Content Include="tmunot\girls\1_a61656bf-.jpg" />
+    <Content Include="tmunot\girls\2022-12-01 21_18_34-‫חולצה דפוס כתר _ קידי שיק.png" />
+    <Content Include="tmunot\girls\2022-12-01 21_18_49-‫שמלת זמש פנלים _ קידי שיק.png" />
+    <Content Include="tmunot\girls\2022-12-01 21_19_01-‫סרפן פפיונים _ קידי שיק.png" />
+    <Content Include="tmunot\girls\2022-12-01 21_19_16-‫אפודה+דמוי חולצה _ קידי שיק.png" />
+    <Content Include="tmunot\girls\2022-12-01 21_19_37-‫סרפן רכיסה אלכסונית _ קידי שיק.png" />
+    <Content Include="tmunot\girls\2022-12-01 21_19_51-‫סרפן קווילט עם כיס נשלף _ קידי שיק.png" />
+    <Content Include="tmunot\girls\2022-12-01 21_20_13-‫כותנת קטיפה M _ קידי שיק.png" />
+    <Content Include="tmunot\girls\2022-12-01 21_20_29-‫חולצה מנומרת עם כובע _ קידי שיק.png" />
+    <Content Include="tmunot\girls\2022-12-01 21_20_47-‫מעיל בנות _ קידי שיק.png" />
+    <Content Include="tmunot\girls\2022-12-01 21_21_04-‫מעיל בנות מנופח _ קידי שיק.png" />
+    <Content Include="tmunot\girls\2022-12-01 21_21_28-‫חצאית ניטים _ קידי שיק.png" />
+    <Content Include="tmunot\girls\WYJ_7830_540.jpg" />
+    <Content Include="tmunot\girls\WYJ_8553_54.jpg" />
+    <Content Include="tmunot\girls\סרפן פפיונן.jpg" />
+    <Content Include="tmunot\keren-mazor-kidichic-6-2.jpg" />
+    <Content Include="tmunot\KS_0190_.jpg" />
+    <Content Include="tmunot\KS_0752.png" />
+    <Content Include="tmunot\בנות מלאיה.jpg" />
+    <Content Include="tmunot\הסרט שלי.mp4" />
+    <Content Include="tmunot\חולצה.png" />
+    <Content Include="tmunot\מכנסים.png" />
+    <Content Include="tmunot\מרשמלו סניף הארון למעלה.jpg" />
+    <Content Include="tmunot\משה קליין וגד אלבז לנסות - פלייבק %28קריוקי%29.mp3" />
+    <Content Include="tmunot\סופי.png" />
+    <Content Include="tmunot\תינוקות.jpg" />
+    <Content Include="tmunot\‏‏BGADIM1.png" />
+    <Content Include="tmunot\‏‏לפרוייקט - עותק %282%29.gif" />
+    <None Include="all\Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="all\Scripts\jquery-3.4.1.js" />
+    <Content Include="all\Scripts\jquery-3.4.1.min.js" />
+    <Content Include="all\Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="all\Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="all\Scripts\modernizr-2.8.3.js" />
+    <Content Include="pages\tofes.html" />
+    <Content Include="pages\Web.config" />
+    <Content Include="pages\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="pages\Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="all\Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="all\Content\Site.css" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="all\App_Data\" />
+    <Folder Include="all\Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="all\fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="all\fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="all\fonts\glyphicons-halflings-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="all\fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="all\Content\bootstrap.min.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="all\Content\bootstrap.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="all\Content\bootstrap-theme.min.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="all\Content\bootstrap-theme.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pages\packages.config" />
+    <Content Include="all\Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="all\Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>28904</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44307/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
